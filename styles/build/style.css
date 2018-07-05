@@ -16,7 +16,8 @@ body {
   font-family: var(--font-main);
   font-size: 1em;
   color: var(--color-font-main);
-  background-color: var(--color-bg-main); }
+  background-color: var(--color-bg-main);
+  background: url("../../images/bg.jpg"); }
 
 a:link {
   color: var(--color-font-main); }
@@ -31,16 +32,6 @@ wrapper {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  wrapper::after {
-    content: "";
-    background: url("../../images/bg.jpg");
-    opacity: 0.35;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1; }
 
 hero-container {
   width: 100%;
