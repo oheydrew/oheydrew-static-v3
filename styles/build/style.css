@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+body {
+  --font-main: 'Open Sans', sans-serif;
+  --font-hero: 'Euphoria Script', sans-serif;
+  --color-bg-main: #C8E3F7;
+  --color-bg-alt: #999999;
+  --color-font-main: #111;
+  --color-font-alt: #555555;
+  --color-highlight-main: #A80624;
+  --color-highlight-main-dark: darkvar(--color-highlight-main);
+  --color-highlight-alt: #5386E4;
+  --color-highlight-alt-dark: #1B3B6F;
+  font-family: var(--font-main);
+  font-size: 1em;
+  color: var(--color-font-main);
+  background-color: var(--color-bg-main); }
+
+a:link {
+  color: var(--color-font-main); }
+
+a:visited {
+  color: var(--color-font-main); }
+
+wrapper {
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+hero-container {
+  width: 100%;
+  margin: 2em;
+  text-align: center; }
+  hero-container:hover .hero-drew {
+    transition: 2s;
+    color: var(--color-highlight-alt); }
+
+.hero {
+  font-family: var(--font-hero);
+  font-size: 8em;
+  text-shadow: 2px 2px 2px black; }
+
+.hero-drew {
+  font-weight: 700;
+  color: var(--color-highlight-main); }
+
+.subheader {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.5em; }
+
+skills-container {
+  display: flex;
+  width: 40vw;
+  margin: 10em 0 0 0;
+  height: 1em;
+  justify-content: center;
+  align-items: center; }
+
+.skill-icon {
+  height: 0.5em;
+  margin: 0 .2em 0 .2em;
+  font-size: 1.75em;
+  line-height: 1em;
+  transition: 0.2s; }
+  .skill-icon:hover {
+    color: var(--color-highlight-main);
+    font-size: 4em;
+    bottom: 1em; }
+
+icon-container {
+  display: flex;
+  width: 40vw;
+  padding: 2em;
+  justify-content: center; }
+
+.icon {
+  height: 1em;
+  margin: 0 0.5em 0 0.5em;
+  font-size: 4em;
+  line-height: 0.5em;
+  transition: 0.2s;
+  animation-timing-function: ease-in; }
+  .icon:hover {
+    color: var(--color-highlight-main);
+    animation-name: example;
+    animation-duration: 0.20s;
+    animation-iteration-count: 2; }
+
+@keyframes example {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(10deg); }
+  50% {
+    transform: rotate(0deg); }
+  75% {
+    transform: rotate(-10deg); }
+  100% {
+    transform: rotate(0deg); } }
+@media (max-width: 450px) {
+  body {
+    font-size: 12px; } }
+
+/*# sourceMappingURL=style.css.map */
