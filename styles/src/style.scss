@@ -10,22 +10,28 @@ body {
     --font-hero: 'Euphoria Script', sans-serif;
 
     // ---- Variables: Colors
-    --color-bg-main: #C8E3F7;
-    --color-bg-alt: #999999;
-    --color-font-main: #111;
+    --color-bg-main: #111;
+    --color-bg-alt: #333;
+    --color-font-main: #C8E3F7;
     --color-font-alt: #555555;
-    --color-highlight-main: #A80624;
+    --color-highlight-main: #5386E4;
     --color-highlight-main-dark: darkvar(--color-highlight-main);
-    --color-highlight-alt: #5386E4;
+    --color-highlight-alt: #A80624;
     --color-highlight-alt-dark: #1B3B6F;
-
+    
     // ---- Page defaults
     font-family: var(--font-main);
     font-size: 1em;
     color: var(--color-font-main);
 
+    // ---- Background image
+    background-image: url(./../../images/console.jpg);
+    background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+
     background-color: var(--color-bg-main);
-    background: url("../../images/bg.jpg");
 }
 
 a:link {
@@ -40,7 +46,7 @@ a:visited {
 wrapper {
     display: flex;
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     flex-direction: column;
 
     justify-content: center;
@@ -48,9 +54,25 @@ wrapper {
 }
 
 // ---------------------------------------------------------- Main logo / 'Hero'
+
+main-container {
+    height: 70vh;
+    max-width: 500px;
+    padding: 2em;
+    margin: 2em 1em 1em 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // border: 2px solid var(--color-font-main);
+    background-color: rgba(22, 22, 22, 0.7);
+
+}
+
 hero-container {
     width: 100%;
-    margin: 2em;
 
     text-align: center;
 
@@ -83,7 +105,7 @@ hero-container {
 skills-container {
     display: flex;
     width: 40vw;
-    margin: 10em 0 0 0;
+    padding: 2em 0 2em 0;
     height: 1em;
 
     justify-content: center;
@@ -111,6 +133,7 @@ icon-container {
     padding: 2em;
 
     justify-content: center;
+    align-items: center;
 }
 
 .icon {
@@ -143,6 +166,15 @@ icon-container {
 @media (max-width: 450px) {
     body {
         font-size: 12px;
+        background-size: auto 100%;
+    }
+
+    .hero {
+        font-size: 6em;
+    }
+
+    main-container {
+        width: 90%;
     }
 
 }
